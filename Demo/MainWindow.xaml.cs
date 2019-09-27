@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ReusableTheme.UI.WPF;
 
 namespace Demo
 {
@@ -23,6 +24,15 @@ namespace Demo
     public MainWindow()
     {
       InitializeComponent();
+      DataContext = this;
     }
+
+    private void OnClick(object sender, RoutedEventArgs e)
+    {
+      var theme = Theme.ThemeType == ThemeType.Light ? ThemeType.Dark : ThemeType.Light;
+      Theme.LoadThemeType(theme);
+    }
+
+    public string XamlImageKey { get; set; } = "Icon_TeRex";
   }
 }
