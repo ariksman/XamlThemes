@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:wpf="clr-namespace:ReusableTheme.UI.WPF">
+    <ResourceDictionary.MergedDictionaries>
+        <wpf:ThemeResourceDictionary />
+        <ResourceDictionary Source="Styles/FlatButtonStyle.xaml" />
+        <ResourceDictionary Source="Styles/ClearButtonStyle.xaml" />
+        <ResourceDictionary Source="Styles/GoButtonStyle.xaml" />
+        <ResourceDictionary Source="Styles/CustomWindowStyle.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
