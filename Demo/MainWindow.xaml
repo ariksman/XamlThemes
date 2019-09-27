@@ -91,6 +91,7 @@
                     <gui:XamlImage Template="{DynamicResource Icon_Restore}" />
                     <gui:XamlImage Template="{DynamicResource Icon_TeRex}" />
                     <gui:XamlImage Template="{DynamicResource Icon_Theme}" />
+                    <gui:XamlImage Template="{DynamicResource Icon_Floppy}" />
                 </WrapPanel>
                 <StackPanel
                     Height="24"

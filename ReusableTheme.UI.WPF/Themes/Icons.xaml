@@ -1,6 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:gui="clr-namespace:ReusableTheme.UI.WPF.Controls">
+                    xmlns:gui="clr-namespace:ReusableTheme.UI.WPF.Controls"
+                    xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
     <ControlTemplate x:Key="Icon_Add" TargetType="{x:Type gui:XamlImage}">
         <Viewbox>
@@ -137,6 +138,18 @@
                 UseLayoutRounding="False">
                 <Path
                     Data="M16,6A10,10,0,1,0,26,16,10,10,0,0,0,16,6Zm0,18H14v-.25a8,8,0,0,1,0-15.5V8h2Z"
+                    Fill="{TemplateBinding Foreground}" />
+            </Canvas>
+        </Viewbox>
+    </ControlTemplate>
+
+    <ControlTemplate x:Key="Icon_Floppy" TargetType="{x:Type gui:XamlImage}">
+        <Viewbox>
+            <Canvas
+                Width="1792"
+                Height="1792">
+                <Path
+                    Data="M512 1536h768v-384h-768v384zm896 0h128v-896q0-14-10-38.5t-20-34.5l-281-281q-10-10-34-20t-39-10v416q0 40-28 68t-68 28h-576q-40 0-68-28t-28-68v-416h-128v1280h128v-416q0-40 28-68t68-28h832q40 0 68 28t28 68v416zm-384-928v-320q0-13-9.5-22.5t-22.5-9.5h-192q-13 0-22.5 9.5t-9.5 22.5v320q0 13 9.5 22.5t22.5 9.5h192q13 0 22.5-9.5t9.5-22.5zm640 32v928q0 40-28 68t-68 28h-1344q-40 0-68-28t-28-68v-1344q0-40 28-68t68-28h928q40 0 88 20t76 48l280 280q28 28 48 76t20 88z"
                     Fill="{TemplateBinding Foreground}" />
             </Canvas>
         </Viewbox>
