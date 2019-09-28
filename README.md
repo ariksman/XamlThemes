@@ -1,5 +1,7 @@
 # XamlThemes
 
+Solution demonstrates how to create reusable WPF style libraries which can be easily used in other projects as a dll or direct reference.
+
 ## Frameworks
 
 - Font Awesome [https://fontawesome.com]
