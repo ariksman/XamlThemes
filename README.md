@@ -27,6 +27,15 @@ Steps to use vector graphics within xaml:
         </Viewbox>
     </ControlTemplate>
 ```
+* If needed the path created image can be oriented differently
+
+```xaml
+<Canvas>
+    <Canvas.LayoutTransform>
+        <ScaleTransform ScaleX="1" ScaleY="-1" CenterX=".5" CenterY=".5" />
+    </Canvas.LayoutTransform>
+</Canvas>
+```
     
 ## Sources
 
