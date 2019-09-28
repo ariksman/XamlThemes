@@ -27,7 +27,7 @@ Steps to use vector graphics within xaml:
         </Viewbox>
     </ControlTemplate>
 ```
-* If needed the path created image can be oriented differently
+* If needed, the image created by the path can be oriented differently
 
 ```xaml
 <Canvas>
