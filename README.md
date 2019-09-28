@@ -51,7 +51,7 @@ namespace ReusableTheme.UI.WPF.Themes.Styles
       InitializeComponent();
     }
 ```
-* After this the resource dictionary needs to have a reference for this code-behind class. This can be achieved by adding following line into the resource dictionary:
+* The resource dictionary also needs to be aware that it has code-behind class and this can be achieved by defining the ```x:Class```. Definition is in following format ```class namespace```.```class name```:
 ```xaml
 <ResourceDictionary
     x:Class="ReusableTheme.UI.WPF.Themes.Styles.CustomWindow"
