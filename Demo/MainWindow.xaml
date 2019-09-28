@@ -47,7 +47,8 @@
                     Style="{DynamicResource GoButtonStyle}"/>
                 <CheckBox
                     Margin="0,8"
-                    Content="CheckBox" />
+                    Content="CheckBox" 
+                    Style="{DynamicResource RoundCheckBoxStyle}"/>
                 <ComboBox Margin="0,8">
                     <ComboBoxItem
                         Content="Item 1"
