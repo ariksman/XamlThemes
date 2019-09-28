@@ -41,6 +41,10 @@
                 <Button
                     Margin="0,8"
                     Content="Button" />
+                <Button
+                    Margin="0,8"
+                    Content="Button" 
+                    Style="{DynamicResource GoButtonStyle}"/>
                 <CheckBox
                     Margin="0,8"
                     Content="CheckBox" />
@@ -92,6 +96,7 @@
                     <gui:XamlImage Template="{DynamicResource Icon_TeRex}" />
                     <gui:XamlImage Template="{DynamicResource Icon_Theme}" />
                     <gui:XamlImage Template="{DynamicResource Icon_Floppy}" />
+                    <gui:XamlImage Template="{DynamicResource Icon_Flash}" />
                 </WrapPanel>
                 <StackPanel
                     Height="24"
