@@ -39,8 +39,8 @@ Steps to use vector graphics within xaml:
     
 ## How to use use code-behind on a resource dictionary
 Resource dictionary can also have a code-behind file. To create the code-behind file in visual studio, lets assume we have an existing ```CustomWindowStyle.xaml``` resource dictionary. 
-* Next create a normal class within the same namespace named: ```CustomWindowStyle.xaml.cs```
-* After this edit the created class into following format:
+* Next step is to create a normal class within the same namespace named: ```CustomWindowStyle.xaml.cs```
+* After the class has been created, it needs some modification. The class needs to extend ```ResourceDictionary```, be declared as ```partial``` and call ``ÌnitializeComponent()``` in its constructor. After these edits, the class should be in the following format:
 ```csharp
 namespace ReusableTheme.UI.WPF.Themes.Styles
 {
