@@ -48,6 +48,8 @@
                 <CheckBox
                     Margin="0,8"
                     Content="CheckBox" 
+                    BorderThickness="2"
+                    IsChecked="True"
                     Style="{DynamicResource RoundCheckBoxStyle}"/>
                 <ComboBox Margin="0,8">
                     <ComboBoxItem
