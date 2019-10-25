@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.3\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -49,6 +52,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AttachedProperties\ButtonProperties.cs" />
+    <Compile Include="Behaviors\DependencyObjectExtensions.cs" />
+    <Compile Include="Behaviors\DeSelectByEscKeyBehavior.cs" />
+    <Compile Include="Behaviors\DialogCloser.cs" />
+    <Compile Include="Behaviors\EmptySpaceClickBehaviour.cs" />
+    <Compile Include="Behaviors\InputBindingsManager.cs" />
+    <Compile Include="Behaviors\KeyUpToCommandBehaviour.cs" />
+    <Compile Include="Behaviors\MouseDragPopupBehavior.cs" />
+    <Compile Include="Behaviors\RepositionPopupBehavior.cs" />
     <Compile Include="Controls\XamlImage.cs" />
     <Compile Include="Converters\BoolToVisibilityFlexConverter.cs" />
     <Compile Include="Converters\ObjectToVisibilityConverter.cs" />
@@ -78,6 +89,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -45,6 +45,7 @@ using System.Windows.Markup;
 [assembly: XmlnsDefinition("http://reusabletheme.com/2019/ui/wpf", "ReusableTheme.UI.WPF.AttachedProperties")]
 [assembly: XmlnsDefinition("http://reusabletheme.com/2019/ui/wpf", "ReusableTheme.UI.WPF.Controls")]
 [assembly: XmlnsDefinition("http://reusabletheme.com/2019/ui/wpf", "ReusableTheme.UI.WPF.Converters")]
+[assembly: XmlnsDefinition("http://reusabletheme.com/2019/ui/wpf", "ReusableTheme.UI.WPF.Behaviors")]
 
 // Version information for an assembly consists of the following four values:
 //
