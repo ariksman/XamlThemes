@@ -36,7 +36,7 @@ namespace ReusableTheme.UI.WPF.Behaviors
 
       if (controlUnderMouse.GetType() != typeof(ListBoxItem))
       {
-        listBox.Dispatcher.BeginInvoke((Action) SetSelectedItemNull, DispatcherPriority.ContextIdle);
+        listBox.Dispatcher?.BeginInvoke((Action) SetSelectedItemNull, DispatcherPriority.ContextIdle);
       }
     }
   }
