@@ -44,7 +44,7 @@ namespace ReusableTheme.UI.WPF.Behaviors
 
       if (e.NewValue != null)
       {
-        element.PreviewKeyDown += new KeyEventHandler(HandlePreviewKeyDown);
+        element.PreviewKeyDown += HandlePreviewKeyDown;
       }
     }
 
