@@ -35,10 +35,7 @@ namespace ReusableTheme.UI.WPF.Behaviors
     private static void OnUpdatePropertySourceWhenEnterPressedPropertyChanged(DependencyObject dp,
       DependencyPropertyChangedEventArgs e)
     {
-      if (!(dp is UIElement element))
-      {
-        return;
-      }
+      if (!(dp is UIElement element)) return;
 
       if (e.OldValue != null)
       {
@@ -64,15 +61,8 @@ namespace ReusableTheme.UI.WPF.Behaviors
       var property =
         GetUpdatePropertySourceWhenEnterPressed(source as DependencyObject);
 
-      if (property == null)
-      {
-        return;
-      }
-
-      if (!(source is UIElement elt))
-      {
-        return;
-      }
+      if (property == null) return;
+      if (!(source is UIElement elt)) return;
 
       var binding = BindingOperations.GetBindingExpression(elt, property);
 
