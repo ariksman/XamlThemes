@@ -17,6 +17,7 @@ namespace ReusableTheme.UI.WPF.Behaviors
         _oldMousePosition = AssociatedObject.PointToScreen(e.GetPosition(AssociatedObject));
         AssociatedObject.Child.CaptureMouse();
       };
+
       AssociatedObject.MouseMove += (s, e) =>
       {
         if (!_mouseDown) return;
@@ -26,6 +27,7 @@ namespace ReusableTheme.UI.WPF.Behaviors
         AssociatedObject.HorizontalOffset += offset.X;
         AssociatedObject.VerticalOffset += offset.Y;
       };
+
       AssociatedObject.MouseLeftButtonUp += (s, e) =>
       {
         _mouseDown = false;
