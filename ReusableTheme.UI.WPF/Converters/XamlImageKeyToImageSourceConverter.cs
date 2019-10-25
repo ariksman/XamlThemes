@@ -11,7 +11,7 @@ namespace ReusableTheme.UI.WPF.Converters
 {
   public class XamlImageKeyToImageSourceConverter : MarkupExtension, IValueConverter
   {
-    private static XamlImageKeyToImageSourceConverter converter;
+    private static XamlImageKeyToImageSourceConverter _converter;
 
     public XamlImageKeyToImageSourceConverter()
     {
@@ -30,7 +30,7 @@ namespace ReusableTheme.UI.WPF.Converters
 
     public override object ProvideValue(IServiceProvider serviceProvider)
     {
-      return converter ?? (converter = new XamlImageKeyToImageSourceConverter(ForegroundResourceKey, Height, Width));
+      return _converter ?? (_converter = new XamlImageKeyToImageSourceConverter(ForegroundResourceKey, Height, Width));
     }
 
     public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
