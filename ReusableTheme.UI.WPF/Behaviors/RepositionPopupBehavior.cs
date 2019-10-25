@@ -30,7 +30,7 @@ namespace ReusableTheme.UI.WPF.Behaviors
             AssociatedObject.Loaded += AssociatedObject_Loaded;
         }
 
-        void AssociatedObject_Loaded(object sender, RoutedEventArgs e)
+        private static void AssociatedObject_Loaded(object sender, RoutedEventArgs e)
         {
             //AssociatedObject.HorizontalOffset = 7;
             //AssociatedObject.VerticalOffset = -AssociatedObject.Height;
