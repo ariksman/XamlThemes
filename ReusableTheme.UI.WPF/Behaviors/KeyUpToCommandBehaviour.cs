@@ -46,7 +46,7 @@ namespace ReusableTheme.UI.WPF.Behaviors
             AssociatedObject.AddHandler(UIElement.KeyUpEvent, _routedEventHandler, true);
         }
 
-        void AssociatedObject_KeyUp(object sender, RoutedEventArgs e)
+        private void AssociatedObject_KeyUp(object sender, RoutedEventArgs e)
         {
             if (!(e is KeyEventArgs keyArgs))
                 return;
