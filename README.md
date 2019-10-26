@@ -2,9 +2,10 @@
 
 Solution demonstrates how to create reusable WPF style libraries which can be easily used in other projects as a dll or direct reference.
 
-## Frameworks
+## Third party libraries
 
 - Font Awesome [https://fontawesome.com]
+- Microsoft Xaml Behaviors [https://www.nuget.org/packages/Microsoft.Xaml.Behaviors.Wpf]
 
 ## How to use xaml vector graphics - SVG to XAML 
 
