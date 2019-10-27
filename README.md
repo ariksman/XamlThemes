@@ -2,9 +2,10 @@
 
 Solution demonstrates how to create reusable WPF style libraries which can be easily used in other projects as a dll or direct reference.
 
-## Frameworks
+## Third party libraries
 
 - Font Awesome [https://fontawesome.com]
+- Microsoft Xaml Behaviors [https://www.nuget.org/packages/Microsoft.Xaml.Behaviors.Wpf]
 
 ## How to use xaml vector graphics - SVG to XAML 
 
@@ -55,6 +56,15 @@ namespace ReusableTheme.UI.WPF.Themes.Styles
 ```xaml
 <ResourceDictionary
     x:Class="ReusableTheme.UI.WPF.Themes.Styles.CustomWindow"
+```
+
+## Nuget package
+This theme project can be distributed as a nuget package. To create a nuget package, first download ```nuget.exe``` and for convenience add it to the environment path. After these, steps run command: ```nuget spec``` on the command promt in the project folder. This will create the ```project.nuspec``` file. Finally, by adding the following post-build event, the nuget package will be created on release builds and copied into the given folder path.  
+```
+if $(ConfigurationName) == Release (
+    nuget pack "$(ProjectPath)" -Properties Configuration=Release
+    xcopy "$(TargetDir)*.nupkg" "C:\NuGet" /C /Y
+)
 ```
 
 ## Sources
