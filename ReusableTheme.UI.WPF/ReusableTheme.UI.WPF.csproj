@@ -94,6 +94,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="ReusableTheme.UI.WPF.nuspec" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -131,4 +132,10 @@
     </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if $(ConfigurationName) == Release (
+    nuget pack "$(ProjectPath)" -Properties Configuration=Release
+    xcopy "$(TargetDir)*.nupkg" "C:\NuGet" /C /Y
+)</PostBuildEvent>
+  </PropertyGroup>
 </Project>
