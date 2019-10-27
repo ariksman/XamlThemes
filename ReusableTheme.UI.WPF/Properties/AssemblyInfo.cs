@@ -9,12 +9,12 @@ using System.Windows.Markup;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ReusableTheme.UI.WPF")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyDescription("A library of reusable styles, themes, icons, controls, and other UI helpers.")]
+[assembly: AssemblyConfiguration("Release")]
+[assembly: AssemblyCompany("-")]
 [assembly: AssemblyProduct("ReusableTheme.UI.WPF")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("-")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
