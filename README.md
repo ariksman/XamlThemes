@@ -58,6 +58,15 @@ namespace ReusableTheme.UI.WPF.Themes.Styles
     x:Class="ReusableTheme.UI.WPF.Themes.Styles.CustomWindow"
 ```
 
+## Nuget package
+This theme project can be distributed as a nuget package. To create a nuget package, first download ```nuget.exe``` and for convenience add it to the environment path. After these, steps run command: ```nuget spec``` on the command promt in the project folder. This will create the ```project.nuspec``` file. Finally, by adding the following post-build event, the nuget package will be created on release builds and copied into the given folder path.  
+```
+if $(ConfigurationName) == Release (
+    nuget pack "$(ProjectPath)" -Properties Configuration=Release
+    xcopy "$(TargetDir)*.nupkg" "C:\NuGet" /C /Y
+)
+```
+
 ## Sources
 
 Original idea from a Pluralsight course _Advanced reusable styles and themes in WPF_ [https://app.pluralsight.com/library/courses/wpf-advanced-reusable-styles-themes/table-of-contents]
