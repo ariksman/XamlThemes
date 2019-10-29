@@ -49,36 +49,6 @@
       </Trigger>
     </ControlTemplate.Triggers>
 
-    <!--<Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Border x:Name="PART_Border"
-                Grid.Row="0"
-                Grid.RowSpan="2"
-                IsHitTestVisible="False" />
-            <Border x:Name="PART_Header"
-                Grid.Row="0"
-                Padding="0,0,0,4"
-                BorderBrush="{TemplateBinding BorderBrush}"
-                BorderThickness="{TemplateBinding BorderThickness}">
-                <ContentPresenter
-                    ContentSource="Header"
-                    RecognizesAccessKey="True"
-                    TextBlock.FontSize="14"
-                    TextBlock.FontWeight="SemiBold"
-                    TextBlock.Foreground="{theme:ThemeResource ResourceKey=GroupBoxHeaderForeground}" />
-            </Border>
-            <ContentPresenter x:Name="Content"
-                Grid.Row="1"
-                Margin="{TemplateBinding Padding}" />
-        </Grid>
-        <ControlTemplate.Triggers>
-            <Trigger Property="IsEnabled" Value="False">
-                <Setter Property="Opacity" Value="{theme:ThemeResource ResourceKey=ControlDisabledOpacity}" />
-            </Trigger>
-        </ControlTemplate.Triggers>-->
   </ControlTemplate>
 
   <Style
