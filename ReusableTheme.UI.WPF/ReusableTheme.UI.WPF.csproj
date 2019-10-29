@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AttachedProperties\ButtonProperties.cs" />
+    <Compile Include="AttachedProperties\GroupBoxProperties.cs" />
     <Compile Include="Behaviors\DependencyObjectExtensions.cs" />
     <Compile Include="Behaviors\DeSelectByEscKeyBehavior.cs" />
     <Compile Include="Behaviors\DialogCloser.cs" />
@@ -111,6 +112,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Themes\Styles\CustomWindowStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Styles\GroupBoxStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
