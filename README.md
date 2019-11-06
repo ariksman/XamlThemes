@@ -1,5 +1,6 @@
 # XamlThemes
 [![Build status](https://ci.appveyor.com/api/projects/status/393mxd1q08wie4ds/branch/master?svg=true)](https://ci.appveyor.com/project/ariksman/xamlthemes/branch/master)
+[![CodeFactor](https://www.codefactor.io/repository/github/ariksman/xamlthemes/badge)](https://www.codefactor.io/repository/github/ariksman/xamlthemes)
 
 Solution demonstrates how to create reusable WPF style libraries which can be easily used in other projects as a dll or direct reference.
 
